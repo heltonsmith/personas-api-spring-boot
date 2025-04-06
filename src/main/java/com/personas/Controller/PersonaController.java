@@ -20,7 +20,7 @@ public class PersonaController {
     }
 
     // GET /personas - Obtener todas las personas
-    @GetMapping("/")
+    @GetMapping({"", "/"})
     public ResponseEntity<List<Persona>> getAllPersonas() {
         return ResponseEntity.ok(personas);
     }
